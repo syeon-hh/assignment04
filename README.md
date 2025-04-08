@@ -26,6 +26,7 @@ class MyStack:
 
 
 ## 2. leetCode232.ipynb (https://github.com/syeon-hh/assignment04/blob/main/leetCode232.ipynb)
+
 class MyQueue:
 
     def __init__(self):
@@ -53,6 +54,7 @@ class MyQueue:
                 
 ## 3. 큐 연습문제
 ### 1번
+
 class ListQueue:
     def __init__(self):
         self.__queue = []
@@ -73,6 +75,7 @@ class ListQueue:
         self.__queue.clear()
 
 ### 2번
+
 from collections import deque
 
 def isPalindromeStructure(s):
