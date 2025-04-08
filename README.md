@@ -26,4 +26,30 @@ class MyStack:
 
 
 ## 2. leetCode232.ipynb (https://github.com/syeon-hh/assignment04/blob/main/leetCode232.ipynb)
+class MyQueue:
+
+    def __init__(self):
+        self.in_stack = []
+        self.out_stack = []
+
+    def push(self, x: int) -> None:
+        self.in_stack.append(x)
+
+    def pop(self) -> int:
+        self.move()
+        return self.out_stack.pop()
+
+    def peek(self) -> int:
+        self.move()
+        return self.out_stack[-1]
+
+    def empty(self) -> bool:
+        return not self.in_stack and not self.out_stack
+
+    def move(self):
+        if not self.out_stack:
+            while self.in_stack:
+                self.out_stack.append(self.in_stack.pop())
+                
+## 3. 큐 연습문제
 
